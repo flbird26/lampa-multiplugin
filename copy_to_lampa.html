@@ -3,9 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Multiplugin для Lampa</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <style>
     html, body {
         margin: 0;
@@ -16,40 +14,34 @@
         font-family: Arial, Helvetica, sans-serif;
         color: #ffffff;
     }
-
     .container {
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
     .card {
         max-width: 900px;
         padding: 60px;
         text-align: center;
     }
-
     h1 {
         font-size: 52px;
         margin-bottom: 30px;
         letter-spacing: 0.5px;
     }
-
     p {
         font-size: 26px;
         line-height: 1.5;
         color: #d0d0d0;
         margin: 14px 0;
     }
-
     .path {
         margin-top: 10px;
         font-size: 28px;
         color: #ffffff;
         font-weight: bold;
     }
-
     .copy-btn {
         margin-top: 45px;
         padding: 22px 60px;
@@ -63,15 +55,12 @@
         transition: transform 0.15s ease, box-shadow 0.15s ease;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     }
-
     .copy-btn:hover {
         transform: scale(1.04);
     }
-
     .copy-btn:active {
         transform: scale(0.98);
     }
-
     .copied {
         margin-top: 24px;
         font-size: 24px;
@@ -79,48 +68,35 @@
         opacity: 0;
         transition: opacity 0.3s ease;
     }
-
     .copied.show {
         opacity: 1;
     }
 </style>
 </head>
-
 <body>
-
 <div class="container">
     <div class="card">
-
         <h1>Multiplugin для Lampa</h1>
-
         <p>Нажмите кнопку ниже, чтобы скопировать ссылку плагина.</p>
         <p>После этого вставьте её в:</p>
-
         <div class="path">Lampa → Расширения → Добавить</div>
-
         <button class="copy-btn" onclick="copyLink()">
             Нажми сюда, чтобы скопировать
         </button>
-
         <div id="copied" class="copied">✔ Скопировано</div>
-
     </div>
 </div>
-
 <script>
     const pluginLink = 'https://dl.dropboxusercontent.com/scl/fi/w7ptfh525zesvinbqtxja/multiplugin.js?rlkey=1zozlazpsovf4sy96pdez6d23&st=544lfp8b';
-
     function copyLink() {
         navigator.clipboard.writeText(pluginLink).then(() => {
             const copied = document.getElementById('copied');
             copied.classList.add('show');
-
             setTimeout(() => {
                 copied.classList.remove('show');
             }, 2000);
         });
     }
 </script>
-
 </body>
 </html>
