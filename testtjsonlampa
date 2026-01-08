@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Плагин Lampa</title>
+<style>
+html, body {
+    margin:0;
+    width:100%;
+    height:100%;
+    background: #111;
+    color:#eee;
+    font-family: Arial, sans-serif;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+h1 { font-size:48px; margin:0; }
+p { font-size:24px; opacity:0.8; }
+</style>
+</head>
+<body>
+
+<h1>Это Lampa Plugin</h1>
+<p>Нажми назад и продолжай смотреть ТВ 😊</p>
+
+<script src="https://dl.dropboxusercontent.com/scl/fi/w7ptfh525zesvinbqtxja/multiplugin.js?rlkey=1zozlazpsovf4sy96pdez6d23&st=544lfp8b"></script>
+
+</body>
+</html>
